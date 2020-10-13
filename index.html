@@ -1,12 +1,108 @@
 <!DOCTYPE html>
+<style>
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  input {
+    border-radius: 40px;
+  }
+  #viewport {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  #about {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 7.5px;
+  }
+  #store {
+    display: inline-block;
+    padding-left: 7.5px;
+    padding-right: 15px;
+    margin-right: 60px;
+  }
+  #gmail {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 7.5px;
+    margin-left: 500px;
+  }
+  #images {
+    display: inline-block;
+    padding-left: 7.5px;
+    padding-right: 15px;
+  }
+  #linkbelowsearch {
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+  #googlelogo {
+    position: center;
+    height: 92px;
+    padding-top: 109px;
+    padding-left: 250px;
+  }
+  .searchbuttons {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+</style>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Google Homepage</title>
-    </head>
-    <main>
-        <body>
-            
-        </body>
-    </main>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Google</title>
+  </head>
+  <main id="viewport">
+    <body>
+      <ul>
+        <div id="about">
+          <a
+            href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+            >About</a
+          >
+        </div>
+        <div id="store">
+          <a
+            href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"
+            >Store</a
+          >
+        </div>
+        <div id="gmail">
+          <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+        </div>
+        <div id="images">
+          <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+        </div>
+      </ul>
+      <img
+        id="googlelogo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      />
+      <form>
+        <input type="text" />
+        <button class="searchbuttons" type="submit" value="Google Search">
+          Google Search
+        </button>
+        <button class="searchbuttons" type="submit" value="I'm Feeling Lucky">
+          I'm Feeling Lucky
+        </button>
+      </form>
+      <div id="linkbelowsearch">
+        <a
+          href="https://www.google.com/url?q=https://servingveterans.withgoogle.com/%3Futm_source%3Dhpp%26utm_medium%3Dhpp%26utm_campaign%3D10-13-hpp&source=hpp&id=19020709&ct=3&usg=AFQjCNEx20cTMddRNthiYvTSUB1JMP8CyQ&sa=X&ved=0ahUKEwi5loPY4rHsAhXNct8KHb8oDP4Q8IcBCBE"
+          >Resources to support the mental awareness of U.S. Veterans</a
+        >
+      </div>
+    </body>
+  </main>
 </html>
